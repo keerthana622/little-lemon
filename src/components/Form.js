@@ -43,8 +43,6 @@ function Form() {
                     <input type="tel" placeholder="233 00 000 0000" name="telephone" {...register("telephone")}/>
                     <span className="error-message">{errors.telephone?.message}</span>
                 </div>
-
-                {/*<div className="guestsdate">*/}
                 <div className="field occasion">
                     <label htmlFor="occasion">Occasion (optional)</label>
                     <div className="options">
@@ -58,11 +56,9 @@ function Form() {
                 </div>
                 <div className="field guest">
                     <label htmlFor="guests">Guests</label>
-                    <input type="number" placeholder="2" name="guests" {...register("guests")}/> 
+                    <input type="number" placeholder="2" name="guests" {...register("guests")}/>
                     <span className="error-message">{errors.guests?.message}</span>
                 </div>
-                {/*</div>*/}
-                        
                 <div className="field">
                     <label htmlFor="date">Date & Time</label>
                     <input type="datetime-local" name="date" {...register("date")} />
